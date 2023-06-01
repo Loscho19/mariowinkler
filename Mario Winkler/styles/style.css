@@ -1,0 +1,140 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  max-width: 100%;
+}
+
+header {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 15px;
+  box-shadow: 0px 0px 10px 0px #111;
+  background-color: white;
+}
+
+header a {
+  flex: 0 0 113px;
+}
+
+header a img {
+  height: 113px;
+  width: 113px;
+  display: block;
+}
+
+h1 {
+  font-size: 16px;
+  text-transform: uppercase;
+  word-spacing: 9999px;
+}
+
+main {
+  padding: 15px;
+  padding-top: 30px;
+  margin-top: 143px;
+  min-height: 90vh;
+}
+
+.news {
+  display: flex;
+  max-width: 100%;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: 50px;
+  max-height: 50vw;
+
+  overflow-y: hidden;
+}
+
+.news a {
+  max-width: calc((100vw - 30px));
+  overscroll-behavior: contain;
+  scroll-snap-align: start;
+  flex-shrink: 0;
+  position: relative;
+  display: inline-block;
+}
+.news a img {
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.newsitem__content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.newsitem__content h3 {
+  padding: 10px;
+  background-color: white;
+  color: black;
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 40px;
+  width: 100%;
+  text-align: center;
+}
+
+.teams {
+  margin-bottom: 50px;
+  list-style-type: none;
+}
+
+.teams a {
+  color: #000;
+  display: inline-block;
+  padding: 5px 0;
+  margin-bottom: 5px;
+  text-decoration: none;
+}
+
+.teams li {
+  display: none;
+}
+.teams a:hover {
+  color: blue;
+}
+
+.sponsoren {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  max-width: 100%;
+}
+
+.sponsoren img {
+  flex: 0 0 auto;
+  display: block;
+  max-width: 18%;
+  width: auto;
+}
+
+footer {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #a9c3e5;
+}
