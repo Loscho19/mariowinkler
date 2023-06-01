@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body,
 html {
   margin: 0;
@@ -46,18 +50,19 @@ main {
 .news {
   display: flex;
   max-width: 100%;
+  width: 100%;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
   margin-bottom: 50px;
-  max-height: 50vw;
-
+  max-height: auto;
   overflow-y: hidden;
 }
 
 .news a {
   max-width: calc((100vw - 30px));
+  width: 100%;
   overscroll-behavior: contain;
   scroll-snap-align: start;
   flex-shrink: 0;
@@ -67,8 +72,10 @@ main {
 .news a img {
   display: block;
   max-width: 100%;
+  width: 100%;
   object-fit: cover;
   object-position: center;
+  aspect-ratio: 16 / 9;
 }
 
 .newsitem__content {
@@ -120,15 +127,15 @@ h2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 10px;
   max-width: 100%;
 }
 
 .sponsoren img {
   flex: 0 0 auto;
   display: block;
-  max-width: 18%;
-  width: auto;
+  width: 20%;
+  height: auto;
+  padding: 15px;
 }
 
 footer {
